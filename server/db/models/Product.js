@@ -20,13 +20,13 @@ const Product = db.define('product', {
         type: Sequelize.TEXT,
         defaultValue: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
-    category: {
-        type: Sequelize.ENUM('Cutting Boards', 'Furniture', 'Lawn Decor'),
-        defaultValue: 'Organic'
-    },
+    // category: {
+    //     type: Sequelize.ENUM('Cutting Boards', 'Furniture', 'Lawn Decor'),
+    //     defaultValue: 'Cutting Boards'
+    // },
     imageUrl: {
         type: Sequelize.ARRAY(Sequelize.STRING),
-        defaultValue: ['https://www.instagram.com/p/Chj7zBLLA7F/']
+        defaultValue: ['https://unsplash.com/photos/OOv2sCKwYAA']
     }
 });
 
