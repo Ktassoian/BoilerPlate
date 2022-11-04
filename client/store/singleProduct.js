@@ -8,3 +8,12 @@ export const setSingleProduct = (product) => {
     product,
   };
 };
+
+export default (state = {}, action) => {
+  switch (action.type) {
+    case SET_SINGLE_PRODUCT:
+      return action.product;
+    default:
+      return state;
+  }
+};
